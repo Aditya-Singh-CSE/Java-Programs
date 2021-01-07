@@ -1,0 +1,23 @@
+package questions;
+import java.util.Scanner;
+
+public class Question1 {
+	
+	/** Write a program to enter two numbers and check whether the first one 
+	 * is multiple of second number or not.
+	 */
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the first number:");
+		float num1 = sc.nextFloat();
+		System.out.println("Enter the second number:");
+		float num2 = sc.nextFloat();
+		if(num2%num1==0)
+		{
+			System.out.println("First number " + num1 + " is multiple of second number "+num2);
+		}
+		else
+			System.out.println(num1 + " is not a multiple of " + num2);
+	}
+}
